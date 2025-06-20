@@ -902,6 +902,5 @@ demographics.head()
 ##Filter above plot to specified date range with row slice in .loc
 (transactions.set_index("date").sort_index().loc["2016-04":"2017-10", "SALES_VALUE"].resample("ME").sum().plot())
 
-#Afetr resampling monthly sales, create a year_prior column with assign
-#This column is our monthly sales shifted forward a year (12 rows/months)
+
 
